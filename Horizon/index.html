@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Horizon Travels</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header ">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><i class="fa fa-send"><strong>   Horizon</strong><br><small><i>Travels & Tours</i></small></i></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#service">ABOUT US</a></li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"role="button">SERVICES <i class="caret"></i></a>
+              <ul class=" dropdown-menu">
+                <li><a href="#flight.html">FLIGHTS</a></li>
+                <li><a href="#hptel.html">HOTELS</a></li>
+                <li><a href="#tour.html">TOUR PACKAGES</a></li>
+                <li><a href="#car.html">CAR HIRE</a></li>
+                <li><a href="#visa.html">VISA</a></li>
+                <li><a href="#travel.html">TRAVEL INSURANCE</a></li>
+                <li><a href="#map.html">MAPS</a></li>
+              </ul>
+            </li>
+            <li><a href="#blog.html">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <section class="header">
+      <div class="img-bg">
+        <img src="assets/img/backgound.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="container">
+        <div class="img-text text-center">
+          <h4 class="text-capitalize">plan a trip with </h4>
+          <h1 class="">HORIZON <br> TRAVELS AND TOURS</h1>
+          <button class="btn btn-info">READ MORE</button>
+        </div>
+      </div>
+    </section>
+        <!-- start Feature Area  -->
+        <section class="feature-area" id="service">
+          <div class="container">
+            <h2> <span>WE’RE OFFERING THESE POPULAR SERVICES</span> </h2>
+            <h1> <strong>Getting Adventure with Services</strong> </h1>
+            <hr class="title-bottom-bar">
+              <div class="row">
+                <!-- First Feature -->
+                <div class="col-md-4">
+                  <div class="content-bg">
+                    <h2> <strong>Pool Hangout, So Relaxing</strong> </h2>
+                     <p class="text-capitalize">Visit the pool and feel the warmth</p>  <br>
+                      <small><a href="#" class="btn btn-info">Read More</a> </small>
+                    <div class="img-bg">
+                      <img src="assets/img/destination_5.jpg" alt="An image of desert" class="img-responsive">
+                    </div>
+                  </div>
+                </div>
+                <!--Second Feature  -->
+                <div class="col-md-4">
+                  <div class="content-bg">
+                    <h2> <strong>Explore New Cities</strong> </h2>
+                     <p class="text-capitalize"> Visit differnt places and enjoy moments from it</p>  <br>
+                      <small><a href="#" class="btn btn-info">Read More</a> </small>
+                    <div class="img-bg">
+                      <img src="assets/img/destination_4.jpg" alt="An image of desert" class="img-responsive">
+                    </div>
+                  </div>
+                </div>
+                <!-- Third Feature -->
+                <div class="col-md-4">
+                  <div class="content-bg">
+                    <h2> <strong>Get The Relaxation You Need!</strong> </h2>
+                     <p class="text-capitalize">Your Money is used for your relaxation</p>  <br>
+                      <small><a href="#" class="btn btn-info">Read More</a> </small>
+                    <div class="img-bg">
+                      <img src="assets/img/destination_6.jpg" alt="An image of desert" class="img-responsive">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+            </section>
+            <!--end Feature Area  -->
+           
+        <!-- start contact class -->
+
+        <section class="contact">
+          <div class="img-bg">
+           <img src="assets/img/intro.png" alt="" class="img-responsive">
+          </div>
+          
+          <h1 id="contact">Contact Us</h1>
+          <div class="header">
+            <h4 id="time" class="text-uppercase"></h4>
+          </div>
+        <div class="form">
+          <form class="myForm" onsubmit="return validateForm()" action="index.html" method="GET POST">
+          <label for="name">Your Name</label>
+            <input type="text" onkeypress="return a(event)"  name="name"  class="form-control" id="name" placeholder="Your Name" value=""><br>
+              <label for="message" >Message</label>
+            <textarea name="message" id="message" maxlength="1000" cols="30" rows="10" placeholder="Enter Your Message Here" class="form-control"></textarea>
+          <div class="submit">
+              <input type="submit" name="" value="Submit" class="  btn btn-success  form-control">
+          </div>
+          </form>
+        </div>
+      </section>
+          <!-- end contact class -->
+          <!-- //footer// -->
+
+          <footer id="footer">
+            <h4>Horizon Travels &amp; Tours <a href="index.html"> Yusuf Abdulmuizz</a> <i> &copy; Copyright, 2020</i> All Rights Reserved.</h4>
+         
+            <div class="row">
+              <div class="col-md-3 col-xs-6">
+                <h5 >Instagram <br> <a href="https://instagram.com/baba_muizz" target="_blank"> <i class="btn btn-danger
+                  " ><i class="fa fa-instagram"></i></i> </a> </h5>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                   <h5>Twitter <br> <a href="https://twitter.com/AbdulmuizzYusuf" target="_blank"> <i class="btn btn-info"><i class="fa fa-twitter"></i></i> </a> </h5>
+         
+              </div>
+              <div class="col-md-3 col-xs-6">
+                <h5>Whatsapp <br> <a href="https://wa.link/vx93t1" target="_blank"><i class="btn btn-success"><i class="fa fa-whatsapp"></i></i> </a> </h5>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                <h5>E.Mail <br> <a href="mailto:yusufabdulmuizz00@gmail.com" target="_blank"> <i class="btn btn-danger"><i class="fa fa-envelope"></i></i> </a> </h5>
+              </div>
+            </div>
+            <a href="#top"><i class="fa fa-chevron-circle-up pull-right"></i></a>
+         </footer>
+         
+          <!-- end footer -->
+	
+
+  
+     <script src="assets/js/appp.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
